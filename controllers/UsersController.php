@@ -17,7 +17,7 @@ class UsersController extends Controller {
       * @middleware isAuthenticate
       * @api GET /:id([0-9]+)
       */
-     function getUser($id) {
+     function selectUser($id) {
         echo "$id\n";
         print_r('getUser');
      }
@@ -33,7 +33,7 @@ class UsersController extends Controller {
      /**
       * @api PUT /new
       */
-     function newUser() {
+     function createUser() {
         print_r('newUser');
      }
 
